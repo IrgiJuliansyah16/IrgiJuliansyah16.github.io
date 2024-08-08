@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy BirthDay</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7e0;
+            background-image: url('bg.jpg'); /* Add your background image here */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 320px;
+            background-color: #fff;
+            border: 2px solid #b5e7b5;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .card-header {
+            background-color: #b5e7b5;
+            padding: 10px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header .icons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .card-header .icons div {
+            width: 15px;
+            height: 15px;
+            background-color: #79c779;
+            border-radius: 50%;
+        }
+
+        .card-header .icons div:last-child {
+            background-color: #79c779;
+        }
+
+        .card-header .title {
+            font-size: 18px;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .card-content {
+            margin-top: 20px;
+        }
+
+        .card-content img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #4caf50;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card-footer button {
+            background-color: #4caf50;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            width: 80px;
+        }
+
+        .card-footer p {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="icons">
+                <div><span class="heart">♥</span></div>
+                <div><span class="heart">♥</span></div>
+            </div>
+            <div class="title">Happy BirthDay Acaa</div>
+            <div class="icons">
+                <div><span class="heart">♥</span></div>
+                <div><span class="heart">♥</span></div>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="bday.gif" alt="Cute Icon"> <!-- Add your image here -->
+            <p>
+                Di hari yang penuh kebahagiaan ini, aku ingin mengingatkan betapa beruntungnya aku memiliki dirimu di
+                hidupku. Setiap momen yang kita lalui bersama adalah harta tak ternilai, dan kehadiranmu adalah anugerah
+                yang tak terbandingkan. Kamu adalah bintang yang menerangi setiap langkahku, dan aku bersyukur untuk
+                setiap detik yang kita habiskan bersama. Terima kasih telah menjadi alasan senyumku dan sumber
+                kebahagiaanku. Aku mencintaimu, lebih dari kata-kata yang bisa kuungkapkan.Happy BirthDay Sayang Love You
+            </p>
+
+        </div>
+        <div class="card-footer">
+            <button onclick="playMusic()">Note</button>
+            <button onclick="goToNextPage1()">Pict</button>
+        </div>
+        <div class="card-footer">
+            <p>( Igii)</p>
+        </div>
+    </div>
+
+    <script>
+        function playMusic() {
+            var music = document.getElementById('background-music');
+            music.play();
+        }
+
+        function goToNextPage() {
+            window.location.href = "hal1.html"; // Replace with your next page URL
+        }
+
+        function goToNextPage1() {
+            window.location.href = "hal2.html"; // Replace with your next page URL
+        }
+    </script>
+
+</body>
+
+</html>
